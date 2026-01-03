@@ -1,0 +1,91 @@
+.track {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 12px;
+  padding: 10px;
+  align-items: start;
+}
+
+.artwork {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+.artworkFallback {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  background: rgba(139,92,246,0.18);
+  border: 1px solid rgba(255,255,255,0.10);
+}
+
+.meta {
+  min-width: 0;
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: start;
+}
+
+.titleBlock {
+  min-width: 0;
+}
+
+.name {
+  font-weight: 800;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sub {
+  display: flex;
+  gap: 8px;
+  opacity: 0.8;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.artist, .album {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dot {
+  opacity: 0.6;
+}
+
+.action {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.06);
+  color: rgba(255,255,255,0.92);
+  cursor: pointer;
+  font-weight: 900;
+  flex: 0 0 auto;
+}
+
+.action:hover {
+  border-color: rgba(139,92,246,0.6);
+}
+
+.audio {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.previewNote {
+  margin-top: 8px;
+  opacity: 0.6;
+  font-size: 0.9rem;
+}
